@@ -40,14 +40,13 @@ def evaluar_estado(rsrp: int, sinr: int) -> str:
 
 
 # ── Cliente Altanet ST20 ─────────────────────────────────────────────────────
-
 class AltanetDongle:
     HEADERS = {
         "Referer": "http://10.10.10.1/index.html",
         "X-Requested-With": "XMLHttpRequest",
     }
 
-    def __init__(self, host="192.168.6.1", user="admin", password="admin"):
+    def __init__(self, host="10.10.10.1", user="admin", password="admin"):
         self.base_url = f"http://{host}"
         self.user = user
         self.password = password
