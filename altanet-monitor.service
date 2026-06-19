@@ -7,7 +7,7 @@ Wants=network-online.target
 Type=simple
 User=fabrifor
 WorkingDirectory=/home/fabrifor
-ExecStart=/usr/bin/python3 /home/fabrifor/altanet_monitor.py
+ExecStart=/usr/bin/python3 /home/fabrifor//home/fabrifor/altanet-monitor/altanet_monitor.py
 Restart=on-failure
 RestartSec=10
 
