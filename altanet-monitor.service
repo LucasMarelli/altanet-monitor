@@ -1,0 +1,15 @@
+[Unit]
+Description=Altanet ST20 — Monitor de señal GSM
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=fabrifor
+WorkingDirectory=/home/fabrifor
+ExecStart=/usr/bin/python3 /home/fabrifor/altanet_monitor.py
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
