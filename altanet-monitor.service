@@ -8,6 +8,7 @@ Type=simple
 User=fabrifor
 WorkingDirectory=/home/fabrifor
 ExecStart=/usr/bin/python3 /home/fabrifor/altanet-monitor/altanet_monitor.py
+Environment=PYTHONUNBUFFERED=1
 Restart=on-failure
 RestartSec=10
 
