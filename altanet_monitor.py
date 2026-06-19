@@ -43,7 +43,7 @@ def evaluar_estado(rsrp: int, sinr: int) -> str:
 
 class AltanetDongle:
     HEADERS = {
-        "Referer": "http://192.168.6.1/index.html",
+        "Referer": "http://192.168.0.1/index.html",
         "X-Requested-With": "XMLHttpRequest",
     }
 
