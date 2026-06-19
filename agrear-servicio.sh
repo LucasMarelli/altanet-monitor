@@ -1,6 +1,3 @@
-# 1. Copiar el script
-cp altanet_monitor.py /home/fabrifor/
-
 # 2. Copiar el servicio
 sudo cp altanet-monitor.service /etc/systemd/system/
 

@@ -175,10 +175,9 @@ def main():
     dongle = AltanetDongle()
     led    = LedSenal(pin=26)
 
-    dongle.login()
-
     while True:
         try:
+            dongle.login()
             data = dongle.get_signal()
 
             if data is None:
